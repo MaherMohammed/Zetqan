@@ -2,17 +2,12 @@
   margin: auto;
   padding: 0;
 }
-#row {
-  padding-top: 15%;
-  padding-bottom: 20%;
-  border-radius: 30px;
-  box-shadow: 12px 12px 22px gray;
-  background-color: rgb(228, 222, 222);
-}
+
 .container {
-  top: 50%;
+  top: 40%;
   left: 50%;
   position: absolute;
+  margin-bottom: 5;
   transform: translate(-50%, -50%);
   margin-bottom: 5px;
 }
@@ -22,4 +17,11 @@
   height: 200px;
   border-radius: 50%;
   opacity: 70%;
+}
+
+footer {
+  position: fixed;
+  height: 100px;
+  bottom: 0;
+  width: 100%;
 }
