@@ -17,6 +17,10 @@
   opacity: 100%;
 }
 
+.avatar:hover {
+  transform: scale(1.5);
+}
+
 footer {
   position: fixed;
   height: 120px;
