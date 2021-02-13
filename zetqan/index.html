@@ -17,6 +17,10 @@
             integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
             crossorigin="anonymous"></script>
         
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]');
+</script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
@@ -27,39 +31,82 @@
 <!--Nav bar-->
 <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
     <!-- Navbar content -->
-    <h4 style="color: whitesmoke;">Zetqan</h4>
-    
-        <ul class="navbar-nav">
-            <li class="nav-item  ml-5">
-                <a class="nav-link" href="../index.html">Home</a>
-            </li>
-            <li class="nav active">
-                <a class="nav-link" href="./index.html">Zetqan</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="../servises/index.html">AWN</a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link" href="../e7san/index.html">E7san</a>
-            </li>
-        </ul>
+    <h4 style="color: whitesmoke;">LOGO</h4>
+    <ul class="navbar-nav">
+
+        <div class="btn-group ml-4">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Zetqan
+            </button>
+            <div class="dropdown-menu">
+                <li><a class="dropdown-item" href="../servises/index.html">Awn</a></li>
+
+                <li><a class="dropdown-item" href="../e7san/index.html">E7san</a></li>
+            </div>
+        </div>
 
 
 
-        <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="../SignUpForm/signUpForm.html"><span class="fas fa-user"></span>Sign Up</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="../LoginForm/loginForm.html"><span class="fas fa-sign-in-alt"></span>Login</a>
-            </li>
-        </ul>
+        <li class="nav active">
+            <a class="nav-link" href="./index.html">Our Team</a>
+        </li>
+
+        <li class="nav active">
+            <a class="nav-link" style="scroll-behavior: smooth;" href="#footersection">About</a>
+        </li>
+
+
+
+
+
+    </ul>
+
+    <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="../index.html"><i class="fa fa-fw fa-home"></i> </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../SignUpForm/signUpForm.html"><i class="fa fa-fw fa-user-plus"></i></i>Sign
+                Up</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../LoginForm/loginForm.html"><i class="fa fa-fw fa-user"></i>Login</a>
+        </li>
+    </ul>
 
 </nav>
 <!--End of navbar-->
+<h2 style="top: 40%;position: absolute;left: 40%;">Will be available soon</h2>
+<div class="d-flex justify-content-center" style="top: 50%;position: absolute;left: 42.5%;">
+
+    <div class="spinner-grow text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-secondary" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-success" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-danger" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-warning" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-info" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+
+    <div class="spinner-grow text-dark" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+
+<section id="footersection" style="scroll-behavior: smooth;">
         <!--footer-->
-        <footer class="bg-dark text-white text-center text-lg-start">
+        <footer class="bg-dark text-white text-center text-lg-start fixed-bottom">
             <!-- Grid container -->
             <div class="container p-4">
                 <!--Grid row-->
@@ -97,7 +144,7 @@
             </div>
             <!-- Copyright -->
         </footer>
-
+</section>
     </body>
 
 </html>
