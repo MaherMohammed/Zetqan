@@ -257,8 +257,9 @@
                     <textarea class="form-control" id="exampleFormControlTextarea3" rows="7" placeholder="Message"></textarea>
                 </div>
                 <br>
-                <button id="Submit" type="submit" class="btn btn-primary">Send</button>
+                <input class="btn btn-outline-secondary" type="button" value="send email" onclick="send()">
             </form>
+            <br>
 
             <h6>E-mail: zetqan111@gmail.com</h6>
             <h6>Mobile: 01063533610</h6>
@@ -318,30 +319,30 @@
             }
         })
 
-    $("#Submit").click(function () {
-        subject = document.getElementById("exampleInputName1").value;
-        email = document.getElementById("exampleInputEmail1").value;
-        message = document.getElementById("exampleFormControlTextarea3").value;
+        function send() {
+            subject = document.getElementById("exampleInputName1").value;
+            email = document.getElementById("exampleInputEmail1").value;
+            message = document.getElementById("exampleFormControlTextarea3").value;
 
-        if (subject === "" || email === "" || message === "") {
-            alert("PLEASE ENTER YOUR DATA CORRECTLY");
+            if (subject === "" || email === "" || message === "") {
+                alert("PLEASE ENTER YOUR DATA CORRECTLY");
+            }
+            else {
+                send_email(subject, email, message);
+            }
         }
-        else{
-            send_email(subject,email,message);
-        }
-        
-
-    });
 
     function send_email(sub,email,msg) {
-       Email.send({
-            SecureToken: "fba39869-f3f3-45e9-b967-7a7a41418413",
+   Email.send({
+            Host: "smtp.elasticemail.com",
+            Username: "maher.mohammed10.97@gmail.com",
+            Password: "D116B3778ADE42472C39F097088B2FB6FAA8",
             To: 'maher.mohammed10.97@gmail.com',
-            From: email,
+            From: "maher.mohammed10.97@gmail.com",
             Subject: sub,
-            Body: msg
+            Body: msg+ "\n email address: " + email
         }).then(
-            message => alert("mail has been sent sucessfully")
+            message => alert(message)
         );
 
          //7c0488bb - 297c - 4fd9 - 8cd6 - 86ab463860a1 
