@@ -8,7 +8,7 @@
         <title>Services</title>
 
           <!-- style -->
-          <link rel="stylesheet" href="css/style.css">
+          <link rel="stylesheet" href="styles.css">
 
           <!-- bootstrap -->
           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -25,46 +25,40 @@
 
     <body>
 <!--Nav bar-->
-<nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: rgb(0, 0, 0)">
+<nav id="navbar" class="navbar navbar-expand-md bg-light navbar-dark sticky-top navbar-rounded shadow">
     <!-- Navbar content -->
-    <h4 style="color: whitesmoke;">LOGO</h4>
-    <ul class="navbar-nav">
-       
-        <div class="btn-group ml-4">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
+    <h4>LOGO</h4>
+
+    <ul class="nav navbar-nav ml-auto">
+        
+        <li class="nav-item">
+            <a id="text-hover-color" class="nav-link" href="#ourservicesection">Services</a>
+        </li>
+        
+        <li class="nav-item">
+            <a id="text-hover-color" class="nav-link" href="./index.html">Our Team</a>
+        </li>
+        
+        <li class="nav-item">
+            <a id="text-hover-color" class="nav-link" style="scroll-behavior: smooth;" href="About.html">About</a>
+        </li>
+
+        <li class="nav-item">
+            <a id="text-hover-color" class="nav-link" href="../index.html"><i class="fa fa-fw fa-home"></i> </a>
+        </li>
+
+        <div class="btn-group">
+            <button id="drop-down-button" type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false" style="font-weight: bold;color: #08254d;">
                 Awn
             </button>
             <div class="dropdown-menu">
-                <li><a class="dropdown-item" href="../zetqan/index.html">Zetqan</a></li>
-                
-                <li><a class="dropdown-item" href="../e7san/index.html">E7san</a></li>
+                <li><a id="text-hover-color" class="dropdown-item" href="../zetqan/index.html">Zetqan</a></li>
+        
+                <li><a id="text-hover-color" class="dropdown-item" href="../e7san/index.html">E7san</a></li>
             </div>
         </div>
-        
-        
-        <li class="nav-item">
-            <a class="nav-link" href="#ourservicesection">Services</a>
-        </li>
 
-        <li class="nav-item">
-            <a class="nav-link" href="./index.html">Our Team</a>
-        </li>
-
-        <li class="nav-item">
-            <a class="nav-link" style="scroll-behavior: smooth;" href="About.html">About</a>
-        </li>
-
-       
-
-        
-        
-    </ul>
-
-    <ul class="nav navbar-nav ml-auto">
-        <li class="nav-item">
-            <a class="nav-link" href="../index.html"><i class="fa fa-fw fa-home"></i> </a>
-        </li>
     </ul>
 
 </nav><!--End of navbar-->
@@ -73,15 +67,11 @@
         <div class="container">
            
             <div class='container pt-5'>
-                <img class="img-fluid  mt-5 mb-5" src="../images/Header-01.png" style='width:100%;height:auto; border-color: brown;'/>
+                <img class="img-fluid  mt-0 mb-5" src="../images/Header-01.png" style='width:100%;height:auto; border-color: brown;'/>
             </div>
 
-            <div id="ourservicesection">
-                <hr>
-                <hr>
-                <hr>
-            </div>
-            <div>
+
+            <div id="ourservicesection" style="padding-top: 70px;">
                 <h1 style="text-align: center;">Our Services</h1>
                 <h2 style="text-align: center;">See our works to make sure you are in the right place</h2>
             </div>
@@ -95,7 +85,7 @@
         <div class="card-body">
             <h4 class="card-title">Graphic Design</h4>
             <p>We will support you with innovative brands to your work.</p>
-            <a href="./graphic-design/index.html" class="btn btn-primary">See our Works</a>
+            <a id="see-our-work" href="./graphic-design/index.html" class="btn btn-secondary">See our Works</a>
         </div>
     </div>
 
@@ -103,8 +93,8 @@
         <img class="card-img-top" src="./web-design/Web-Design.jpg" alt="Card image">
         <div class="card-body">
             <h4 class="card-title">Web Design</h4>
-            <a href="./web-design/index.html" class="btn btn-primary">See our Works</a>
-            <p>Make your work visible to all people.</p>
+            <a id="see-our-work" href="./web-design/index.html" class="btn btn-secondary">See our Works</a>
+            
         </div>
     </div>
 
@@ -112,7 +102,7 @@
         <img class="card-img-top" src="../images/Business-Application.jpeg" alt="Card image">
         <div class="card-body">
             <h4 class="card-title">Business</h4>
-            <a href="#" class="btn btn-primary">See our Works</a>
+            <a id="see-our-work" href="./business-application/index.html" class="btn btn-secondary">See our Works</a>
         </div>
     </div>
 
@@ -126,7 +116,7 @@
         <img class="card-img-top" src="../images/Marketting.jpeg" alt="Card image">
         <div class="card-body">
             <h4 class="card-title">E-Marketing</h4>
-            <a href="#" class="btn btn-primary">See our Works</a>
+            <a id="see-our-work" href="./marketting/index.html" class="btn btn-secondary">See our Works</a>
         </div>
     </div>
 
@@ -134,7 +124,7 @@
         <img class="card-img-top" src="../images/Media-Production.jpeg" alt="Card image">
         <div class="card-body">
             <h4 class="card-title">Media Production</h4>
-            <a href="#" class="btn btn-primary">See our Works</a>
+            <a id="see-our-work" href="./media-production/index.html" class="btn btn-secondary">See our Works</a>
         </div>
     </div>
 
@@ -142,7 +132,7 @@
     <img class="card-img-top" src="../images/Game-Development.jpeg" alt="Card image">
     <div class="card-body">
         <h4 class="card-title">Game Development</h4>
-        <a href="./game-development/index.html" class="btn btn-primary">See our Works</a>
+        <a id="see-our-work" href="./game-development/index.html" class="btn btn-secondary">See our Works</a>
     </div>
 </div>
 </div>
@@ -150,7 +140,7 @@
 
 <section id="footersection" style="scroll-behavior: smooth;">
    <!-- footer -->     
-<footer class="bg-dark text-white text-center text-lg-start">
+<footer class="bg-light text-center text-lg-start">
     <!-- Grid container -->
     <div class="container p-4">
         <!--Grid row-->
@@ -169,11 +159,11 @@
             <!--Grid column-->
         <div class="col-md-3">
             <h4>Follow Us</h4>
-            <a href="https://www.facebook.com/zetqan" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
-            <a href="https://www.instagram.com/zetqan/" class="icoInstagram ml-2" title="Instagram"><i
+            <a id="social-media-icon" href="https://www.facebook.com/zetqan" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+            <a id="social-media-icon" href="https://www.instagram.com/zetqan/" class="icoInstagram ml-2" title="Instagram"><i
                     class="fa fa-instagram"></i></a>
-            <a href="https://twitter.com/EtqanZ" class="icoTwitter ml-2" title="Twitter"><i class="fa fa-twitter"></i></a>
-            <a href="https://github.com/MaherMohammed" class="icoGithub ml-2" title="Github"><i class="fa fa-github"></i></a>
+            <a id="social-media-icon" href="https://twitter.com/EtqanZ" class="icoTwitter ml-2" title="Twitter"><i class="fa fa-twitter"></i></a>
+            <a id="social-media-icon" href="https://github.com/MaherMohammed" class="icoGithub ml-2" title="Github"><i class="fa fa-github"></i></a>
             <!-- Copyright -->
             
         </div>
@@ -189,7 +179,7 @@
     
 
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);font-weight: bold;">
         © 2021 Copyright: All rights reserved for Zetqan.
         <a class="text-white" href=""></a>
     </div>

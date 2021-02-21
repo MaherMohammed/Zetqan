@@ -6,6 +6,10 @@
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  background-image: url("../servises/BG.jpg");
+}
 .container {
   top: 50%;
   left: 50%;
