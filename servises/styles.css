@@ -17,8 +17,15 @@ body {
   color: #08254d;
 }
 
-.drop-down-button {
+#drop-down-button {
   background-color: white;
+  border-color: white;
+}
+
+#drop-down-button:hover {
+  background-color: white;
+  border-color: white;
+  color: black;
 }
 
 #social-media-icon {
