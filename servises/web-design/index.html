@@ -1,90 +1,161 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Business-Application</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
 
-    <title>Web-Design</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url("../images/Background.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+
+        #social-media-icon {
+            color: #08254d;
+        }
+
+        #text-hover-color {
+            color: #08254d;
+            font-weight: bold;
+        }
+
+        #text-hover-color:hover {
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
-        <!--Nav bar-->
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom: 100px;">
-            <div class="container">
-                <ul class="nav navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../../index.html"><i class="fa fa-fw fa-home"></i> </a>
-                    </li>
-        
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">AWN</a>
-                    </li>
-        
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Our Team</a>
-                    </li>
-        
-                </ul>
-            </div>
-        
-        </nav>
-        <!--End of navbar-->
-
-       
-    <div class="container">
-        <h2 style="text-align: center;">Web-Design</h2>
-    </div>
-   
+    <!--Nav bar-->
+    <!--Nav bar-->
+    <nav class="navbar navbar-expand-md bg-light navbar-dark sticky-top" style="margin-bottom: 100px;">
+        <div class="container">
+            <ul class="nav navbar-nav ml-auto">
 
 
-        
-        <div class="container" style="position: absolute;left: 40%;">
-            <h3>Will be available soon.</h3>
-<div class="spinner-grow text-primary" role="status">
-    <span class="sr-only"></span>
-</div>
-<div class="spinner-grow text-secondary" role="status">
-    <span class="sr-only"></span>
-</div>
-<div class="spinner-grow text-success" role="status">
-    <span class="sr-only"></span>
-</div>
-<div class="spinner-grow text-danger" role="status">
-    <span class="sr-only"></span>
-</div>
-<div class="spinner-grow text-warning" role="status">
-    <span class="sr-only"></span>
-</div>
-<div class="spinner-grow text-info" role="status">
-    <span class="sr-only"></span>
-</div>
-<div class="spinner-grow text-light" role="status">
-    <span class="sr-only"></span>
-</div>
-<div class="spinner-grow text-dark" role="status">
-    <span class="sr-only"></span>
-</div>
+                <li class="nav-item">
+                    <a id="text-hover-color" class="nav-link" href="../index.html"><i class="fa fa-fw fa-home"></i> </a>
+                </li>
+
+
+
+            </ul>
         </div>
-        
 
-    
-    <!-- Optional JavaScript; choose one of the two! -->
+    </nav>
+    <!--End of navbar-->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-        crossorigin="anonymous"></script>
+    <div class="container">
+        <h2 style="top: 50%;position: relative;left: 35%;">Will be available soon</h2>
+        <div class="d-flex justify-content-center" style="top: 60%;position: relative;">
+
+            <div class="spinner-grow text-primary" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="spinner-grow text-secondary" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="spinner-grow text-success" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="spinner-grow text-danger" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="spinner-grow text-warning" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="spinner-grow text-info" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+
+            <div class="spinner-grow text-dark" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+
+    </div>
+
+    <section id="footersection" style="scroll-behavior: smooth;">
+        <!-- footer -->
+        <footer class="bg-light text-center text-lg-start fixed-bottom">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-md-12 mb-4 mb-md-0 text-center">
+                        <h5 class="text-uppercase">About Us</h5>
+
+                        <p>
+                            <!--write about us here-->
+                            We support your work.
+                        </p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-3 text-center">
+                        <h4>Follow Us</h4>
+                        <a id="social-media-icon" href="https://www.facebook.com/zetqan" class="icoFacebook"
+                            title="Facebook"><i class="fa fa-facebook"></i></a>
+                        <a id="social-media-icon" href="https://www.instagram.com/zetqan/" class="icoInstagram ms-2"
+                            title="Instagram"><i class="fa fa-instagram"></i></a>
+                        <a id="social-media-icon" href="https://twitter.com/EtqanZ" class="icoTwitter ms-2"
+                            title="Twitter"><i class="fa fa-twitter"></i></a>
+                        <a id="social-media-icon" href="https://github.com/MaherMohammed" class="icoGithub ms-2"
+                            title="Github"><i class="fa fa-github"></i></a>
+                        <!-- Copyright -->
+
+                    </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+                    <div class="col-md-3 text-center" style="margin-left: auto;">
+                        <h4 style="font-weight: bold;"><i class="fa fa-fw fa-envelope"></i> Contact</h4>
+                        <h6>E-mail: zetqan111@gmail.com</h6>
+                        <h6>Mobile: 01110177699</h6>
 
+
+                    </div>
+
+                </div>
+                <!--Grid row-->
+            </div>
+
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);font-weight: bold;">
+                © 2021 Copyright: All rights reserved for Zetqan.
+                <a class="text-white" href=""></a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+    </section>
 </body>
 
 </html>
