@@ -25,60 +25,56 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <style>
+            #social-media-icon {
+  color: #08254d;
+}
+
+#text-hover-color {
+  color: #08254d;
+  font-weight: bold;
+}
+#text-hover-color:hover {
+  color: black;
+}
+        </style>
     </head>
 
     <body>
 <!--Nav bar-->
-<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
-    <!-- Navbar content -->
-    <h4 style="color: whitesmoke;">LOGO</h4>
-    <ul class="navbar-nav">
-
-        <div class="btn-group ml-4">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
+<!--Nav bar-->
+<nav class="navbar navbar-expand-md bg-light navbar-dark sticky-top" style="margin-bottom: 100px;">
+    <div class="container">
+        <ul class="nav navbar-nav ml-auto">
+           
+        <div class="btn-group">
+            <button id="drop-down-button" type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false" style="font-weight: bold;color: #08254d;">
                 Zetqan
             </button>
             <div class="dropdown-menu">
-                <li><a class="dropdown-item" href="../servises/index.html">Awn</a></li>
-
-                <li><a class="dropdown-item" href="../e7san/index.html">E7san</a></li>
+                <li><a id="text-hover-color" class="dropdown-item" href="../servises/index.html">AWN</a></li>
+        
+                <li><a id="text-hover-color" class="dropdown-item" href="../e7san/index.html">E7san</a></li>
             </div>
         </div>
+           
+            <li class="nav-item">
+                <a id="text-hover-color" class="nav-link" href="../index.html"><i class="fa fa-fw fa-home"></i> </a>
+            </li>
 
 
-
-        <li class="nav active">
-            <a class="nav-link" href="./index.html">Our Team</a>
-        </li>
-
-        <li class="nav active">
-            <a class="nav-link" style="scroll-behavior: smooth;" href="#footersection">About</a>
-        </li>
-
-
-
-
-
-    </ul>
-
-    <ul class="nav navbar-nav ml-auto">
-        <li class="nav-item">
-            <a class="nav-link" href="../index.html"><i class="fa fa-fw fa-home"></i> </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="../SignUpForm/signUpForm.html"><i class="fa fa-fw fa-user-plus"></i></i>Sign
-                Up</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="../LoginForm/loginForm.html"><i class="fa fa-fw fa-user"></i>Login</a>
-        </li>
-    </ul>
+            
+        </ul>
+    </div>
 
 </nav>
 <!--End of navbar-->
-<h2 style="top: 40%;position: absolute;left: 40%;">Will be available soon</h2>
-<div class="d-flex justify-content-center" style="top: 50%;position: absolute;left: 42.5%;">
+
+<div class="container">
+<h2 style="top: 50%;position: relative;left: 35%;">Will be available soon</h2>
+<div class="d-flex justify-content-center" style="top: 60%;position: relative;">
 
     <div class="spinner-grow text-primary" role="status">
         <span class="sr-only">Loading...</span>
@@ -104,45 +100,63 @@
     </div>
 </div>
 
+</div>
+
 <section id="footersection" style="scroll-behavior: smooth;">
-        <!--footer-->
-        <footer class="bg-dark text-white text-center text-lg-start fixed-bottom">
-            <!-- Grid container -->
-            <div class="container p-4">
-                <!--Grid row-->
-                <div class="row">
-                    <!--Grid column-->
-                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">About Us</h5>
-        
-                        <p>
-                            <!--write about us here-->
-                            We support your work.
-                        </p>
-                    </div>
-                    <!--Grid column-->
-        
-                    <!--Grid column-->
-                    <div class="col-md-3">
-                        <h4>Follow Us</h4>
-                        <a href="https://www.facebook.com/zetqan" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/zetqan/" class="icoInstagram ml-2" title="Instagram"><i class="fa fa-instagram"></i></a>
-                        <a href="https://twitter.com/EtqanZ" class="icoTwitter ml-2" title="Twitter"><i class="fa fa-twitter"></i></a>
-                        <a href="https://github.com/MaherMohammed" class="icoGithub ml-2" title="Github"><i class="fa fa-github"></i></a>
-                    </div>
-        
+    <!-- footer -->
+    <footer class="bg-light text-center text-lg-start fixed-bottom">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-5 col-md-12 mb-4 mb-md-0 text-center">
+                    <h5 class="text-uppercase">About Us</h5>
+
+                    <p>
+                        <!--write about us here-->
+                        We support your work.
+                    </p>
                 </div>
-                <!--Grid row-->
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-3 text-center">
+                    <h4>Follow Us</h4>
+                    <a id="social-media-icon" href="https://www.facebook.com/zetqan" class="icoFacebook"
+                        title="Facebook"><i class="fa fa-facebook"></i></a>
+                    <a id="social-media-icon" href="https://www.instagram.com/zetqan/" class="icoInstagram ms-2"
+                        title="Instagram"><i class="fa fa-instagram"></i></a>
+                    <a id="social-media-icon" href="https://twitter.com/EtqanZ" class="icoTwitter ms-2"
+                        title="Twitter"><i class="fa fa-twitter"></i></a>
+                    <a id="social-media-icon" href="https://github.com/MaherMohammed" class="icoGithub ms-2"
+                        title="Github"><i class="fa fa-github"></i></a>
+                    <!-- Copyright -->
+
+                </div>
+
+
+                <div class="col-md-3 text-center" style="margin-left: auto;">
+                    <h4 style="font-weight: bold;"><i class="fa fa-fw fa-envelope"></i> Contact</h4>
+                    <h6>E-mail: zetqan111@gmail.com</h6>
+                    <h6>Mobile: 01110177699</h6>
+
+
+                </div>
+
             </div>
-        
-        
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-                © 2020 Copyright:
-                <a class="text-white" href=""></a>
-            </div>
-            <!-- Copyright -->
-        </footer>
+            <!--Grid row-->
+        </div>
+
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);font-weight: bold;">
+            © 2021 Copyright: All rights reserved for Zetqan.
+            <a class="text-white" href=""></a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
 </section>
     </body>
 
